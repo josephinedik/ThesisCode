@@ -1,5 +1,5 @@
 props(1..100).
-perm(1..100,j1).
+perm(1..100).
 parent(a,b).
 judge(j1;j2;j3).
 
