@@ -1,0 +1,7 @@
+judge(j1).                                                        %(1)
+high(j1,j2) :- judge(j1), judge(j2).                              %(2)                       
+high(j1,j3) :- judge(j1), judge(j2), judge(j3).                   %(3)           
+high(j2,j3) :- judge(j1), judge(j2), judge(j3).                   %(4)   
+obl(X,J)    :- obl(X,I), not obl(-X,J), high(I,J), props(X).      %(5)   
+perm(X,J)   :- perm(X,I), not -perm(X,J), high(I,J), props(X).    %(6)   
+obl(-X,J)   :- obl(-X,I), not perm(X,J), high(I,J), props(X).     %(7)   
