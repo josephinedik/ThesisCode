@@ -24,8 +24,8 @@ badness(moved_without_consent).
 catProp(good_relationship_with_child, imp).
 catProp(bad_relationship_with_child, imp).
 catProp(child_wants_to_live_with_parent, unimp).
-catProp(hit_child_once, veryimp).
-catProp(moved_without_consent, veryimp).
+% catProp(hit_child_once, veryimp).
+% catProp(moved_without_consent, veryimp).
 
 choose(b).
 
